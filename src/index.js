@@ -18,14 +18,30 @@
 
 	let osc = this.ctx.createOscillator();
 	let gain = this.ctx.createGain();
-	gain.gain.setValueAtTime(volume|0.5,this.ctx.currentTime);
+	gain.gain.setValueAtTime(volume,this.ctx.currentTime);
 	osc.type = type;
 	osc.frequency.setValueAtTime(frequency,this.ctx.currentTime);
 	osc.connect(gain);
 	gain.connect(this.ctx.destination);
 	osc.start();
-	osc.stop(this.ctx.currentTime + (duration*1000));
+	osc.stop(this.ctx.currentTime + (duration));
     }
-}
+
+	 PlaySine(frequency,duration,volume) {
+		 this.PlayNote(frequency,duration,volume,"sine");
+	 }
+
+	 PlaySquare(frequency,duration,volume) {
+		 this.PlayNote(frequency,duration,volume,"square");
+	 }
+
+	 PlayTriangle(frequency,duration,volume) {
+		 this.PlayNote(frequency,duration,volume,"triangle");
+	 }
+
+	 PlaySawtooth(frequency,duration,volume) {
+		 this.PlayNote(frequency,duration,volume,"sawtooth");
+	 }
+ }
 
 module.exports = new Chime();
