@@ -2,7 +2,7 @@
   "name": "@mog13/chime",
   "version": "0.0.1",
   "description": "A small JS library using audio api to create bleeps and bloops",
-  "main": "src/chime.js",
+  "main": "dist/chime.js",
   "scripts": {
     "build": "webpack"
   },
