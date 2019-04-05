@@ -1,0 +1,29 @@
+{
+  "name": "@mog13/chime",
+  "version": "0.0.1",
+  "description": "A small JS library using audio api to create bleeps and bloops",
+  "main": "src/chime.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mog13/chime.git"
+  },
+  "keywords": [
+    "audio",
+    "chime",
+    "sound",
+    "sfx"
+  ],
+  "author": "Morgan Owen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mog13/chime/issues"
+  },
+  "homepage": "https://github.com/mog13/chime#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
