@@ -1,6 +1,6 @@
 {
   "name": "@mog13/chime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small JS library using audio api to create bleeps and bloops",
   "main": "dist/chime.js",
   "scripts": {
