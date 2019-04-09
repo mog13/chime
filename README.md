@@ -5,10 +5,11 @@ Small JS library using the audio API for basic bleeps and bloops 🤖🎤
 include in your HTML via script:
 
 `<script src="./path/to/chime.js"></script>`
+
 `<script src="https://unpkg.com/@mog13/chime"></script>`
 
 
-####`PlayNote(frequency,duration,volume,type)`
+#### `PlayNote(frequency,duration,volume,type)`
 Plays a sound with the given frequency,volume, type for the duration.
 
 _frequency_: int 0-MAX
@@ -33,7 +34,7 @@ Syntactic sugar for `PlayNote` with the type set to "triangle"
 Syntactic sugar for `PlayNote` with the type set to "sawtooth"
  
 
-### Dev
+## Dev
 contributions welcome. 
 
 `npm run build` to build
