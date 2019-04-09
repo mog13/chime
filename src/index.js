@@ -4,14 +4,14 @@
 	this.ctx = new (window.AudioContext || window.webkitAudioContext)();
 	this.default = {
 		volume:0.5,
-		freq:500,
+		frequency:500,
 		duration:1,
 		type:"sine"
 	}
     }
 
     PlayNote(frequency,duration,volume,type) {
-	if(frequency === undefined) frequency = this.default.freq;
+	if(frequency === undefined) frequency = this.default.frequency;
 	if(duration === undefined) duration = this.default.duration;
 	if(volume === undefined) volume = this.default.volume;
 	if(type === undefined) type = this.default.type;
