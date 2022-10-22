@@ -1,4 +1,4 @@
- export default class Chime {
+export class Chime {
 	
     constructor() {
 	this.ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -43,5 +43,3 @@
 		 this.PlayNote(frequency,duration,volume,"sawtooth");
 	 }
  }
-
-
