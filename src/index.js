@@ -1,4 +1,4 @@
- class Chime {
+ export default class Chime {
 	
     constructor() {
 	this.ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -44,4 +44,4 @@
 	 }
  }
 
-module.exports = new Chime();
+

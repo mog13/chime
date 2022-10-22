@@ -5,7 +5,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'chime.js',
-    library: 'chime',
-    libraryTarget: 'umd'
+    library: {
+      name: 'webpackNumbers',
+      type: 'umd',
+    },
   }
 };
