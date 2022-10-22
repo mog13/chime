@@ -4,7 +4,8 @@
   "description": "A small JS library using audio api to create bleeps and bloops",
   "main": "dist/chime.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
